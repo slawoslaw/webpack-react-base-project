@@ -1,16 +1,27 @@
-import './main.scss'
-import 'whatwg-fetch'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {BrowserRouter} from 'react-router-dom'
+import {AppContainer} from 'react-hot-loader'
 
-const fetchUrl = 'https://api.github.com/repos/github/fetch'
-const body = document.getElementsByTagName('body')[0]
-const pre = document.createElement('pre')
+import App from './components/App'
 
-body.insertBefore(pre, body.firstChild)
+import style from './main.scss'
 
-fetch(fetchUrl)
-  .then(response => {
-    return response.json()
+const render = Component => {
+  ReactDOM.render(
+    <BrowserRouter>
+      <AppContainer>
+        <Component />
+      </AppContainer>
+    </BrowserRouter>,
+    document.getElementById('root')
+  )
+}
+
+render(App)
+
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    render(App)
   })
-  .then(json => {
-    pre.innerText = JSON.stringify(json)
-  })
+}

@@ -1,13 +1,21 @@
-# webpack-base-project
+# webpack-react-base-project
 
 ## Installation
 
-`npm install`
+`yarn install`
 
 ## Run
 
-`npm start`
+`yarn start`
 
 ## Build
 
-`npm run build`
+`yarn build`
+
+## Test
+
+`yarn test`
+
+## Lint
+
+`yarn lint`

@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: ['react-hot-loader/patch', './src/index.js'],
   output: {
     publicPath: '/',
     filename: '[name].[hash].js',
@@ -23,13 +23,15 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   devServer: {
+    host: '0.0.0.0',
+    port: 8070,
     contentBase: './dist',
     historyApiFallback: true
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
@@ -64,6 +66,7 @@ module.exports = {
     ]
   },
   resolve: {
+    extensions: ['.js', '.jsx'],
     modules: ['node_modules', path.join(__dirname, 'src')]
   },
   plugins: [
