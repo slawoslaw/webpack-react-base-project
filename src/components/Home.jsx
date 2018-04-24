@@ -1,8 +1,9 @@
 import React from 'react'
 
+import reactLogo from '../assets/react.svg'
 class Home extends React.Component {
   render() {
-    return <h1>Home</h1>
+    return <img src={reactLogo} />
   }
 }
 

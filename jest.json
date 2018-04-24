@@ -1,5 +1,8 @@
 {
   "coveragePathIgnorePatterns": ["dist", "node_modules", "test"],
   "setupTestFrameworkScriptFile": "./test/setup.js",
-  "setupFiles": ["raf/polyfill"]
+  "setupFiles": ["raf/polyfill"],
+  "moduleNameMapper": {
+    "\\.(css|jpg|png|svg)$": "<rootDir>/test/stub-asset.js"
+  }
 }
