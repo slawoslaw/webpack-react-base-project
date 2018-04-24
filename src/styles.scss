@@ -1,0 +1,10 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+@import '~normalize.css/normalize';
+
+@import 'components/layout/navbar';
+
+body {
+  background-color: $body-bg-color;
+}
