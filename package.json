@@ -8,8 +8,7 @@
     "build": "webpack --progress --profile --bail -p --optimize-minimize --mode production",
     "start": "webpack-dev-server --hot --mode development --devtool inline-source-map",
     "test": "BABEL_ENV=test jest --config ./jest.json",
-    "lint":
-      "eslint --ext .js --ignore-pattern node_modules/ --ignore-pattern dist/ --ignore-pattern coverage/ .",
+    "lint": "eslint --ext .js --ignore-pattern node_modules/ --ignore-pattern dist/ --ignore-pattern coverage/ .",
     "precommit": "pretty-quick --staged && yarn lint"
   },
   "dependencies": {
