@@ -2,4 +2,8 @@
   height: $navbar-size;
   color: $navbar-color;
   background-color: $navbar-bg-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }

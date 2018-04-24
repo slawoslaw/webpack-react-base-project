@@ -1,9 +1,10 @@
-@import 'styles/variables';
-@import 'styles/mixins';
+@import 'styles/helpers/variables';
+@import 'styles/helpers/mixins';
 
 @import '~normalize.css/normalize';
 
-@import 'components/layout/navbar';
+@import 'styles/layout/main';
+@import 'styles/layout/navbar';
 
 body {
   background-color: $body-bg-color;
