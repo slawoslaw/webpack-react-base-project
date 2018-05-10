@@ -1,5 +1,6 @@
 import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
+import {hot} from 'react-hot-loader'
 
 import {Main, Navbar} from './layout'
 import Home from './Home'
@@ -22,4 +23,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default hot(module)(App)
