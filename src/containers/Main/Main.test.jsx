@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import {Main} from '../../../src/components/layout'
+import Main from './Main'
 
 describe('Main', () => {
   it('should be defined', () => {

@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+@import '~normalize-scss/sass/normalize/_import-now';
+
+@import '../components/Button/Button';
+
+@import '../containers/Home/Home';
+@import '../containers/Main/Main';
+@import '../containers/Navbar/Navbar';
+
+body {
+  color: $body-color;
+  background-color: $body-bg-color;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: $body-padding;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $h-color;
+}

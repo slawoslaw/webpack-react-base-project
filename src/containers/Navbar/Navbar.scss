@@ -1,0 +1,20 @@
+.navbar {
+  height: $navbar-size;
+  color: $navbar-color;
+  background-color: $navbar-bg-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: $navbar-padding;
+  border-bottom: 1px solid $navbar-border-bottom-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  > * {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

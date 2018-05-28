@@ -2,8 +2,9 @@ import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import {hot} from 'react-hot-loader'
 
-import {Main, Navbar} from './layout'
-import Home from './Home'
+import Navbar from '../Navbar/Navbar'
+import Main from '../Main/Main'
+import Home from '../Home/Home'
 
 class App extends React.Component {
   render() {

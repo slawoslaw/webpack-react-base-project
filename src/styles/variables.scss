@@ -1,0 +1,26 @@
+$color1: rgba(0, 48, 73, 1);
+$color2: rgba(214, 40, 40, 1);
+$color3: rgba(247, 127, 0, 1);
+$color4: rgba(252, 191, 73, 1);
+$color5: rgba(234, 226, 183, 1);
+
+$body-color: $color1;
+$body-bg-color: $color5;
+$body-padding: 15px;
+
+$h-color: $color2;
+
+$btn-default-color: $color1;
+$btn-default-bg-color: $color5;
+$btn-default-border-color: $color1;
+$btn-default-color-hover: $color2;
+$btn-default-bg-color-hover: $color5;
+$btn-default-border-color-hover: $color2;
+
+$navbar-size: 40px;
+$navbar-padding: 10px;
+$navbar-color: $color2;
+$navbar-bg-color: $color4;
+$navbar-border-bottom-color: $color2;
+
+$main-margin-top: $navbar-size + ($navbar-padding * 2);
