@@ -1,11 +1,25 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
   "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
   "rules": {
     "quotes": [2, "single"],
     "strict": [2, "never"],
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "prettier/prettier": "error"
   },
   "plugins": [
-    "react"
+    "react",
+    "prettier"
   ]
 }
